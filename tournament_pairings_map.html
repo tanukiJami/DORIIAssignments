@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56ad78dcbd68ea65e547d7d85230f310 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_56ad78dcbd68ea65e547d7d85230f310" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_56ad78dcbd68ea65e547d7d85230f310 = L.map(
+                "map_56ad78dcbd68ea65e547d7d85230f310",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_727c8014203868be8025e3ebb799eed5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_727c8014203868be8025e3ebb799eed5.addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            var poly_line_7d244ba66a35dc4d63465cdd192c0e09 = L.polyline(
+                [[34.6834, -82.8374], [33.994, -81.03]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_7d244ba66a35dc4d63465cdd192c0e09.bindTooltip(
+                `<div>
+                     Clemson University vs University of South Carolina (114 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bdd47c1820936eb34222dea72b029969 = L.polyline(
+                [[32.6099, -85.4808], [33.7756, -84.3963]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_bdd47c1820936eb34222dea72b029969.bindTooltip(
+                `<div>
+                     Auburn University vs Georgia Institute of Technology (102 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e8810ed6d97c6bfad1a95573991b420f = L.polyline(
+                [[30.4418, -84.2985], [25.7215, -80.2793]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_e8810ed6d97c6bfad1a95573991b420f.bindTooltip(
+                `<div>
+                     Florida State University vs University of Miami (408 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_740a9bf5a85b12c56834748976cd1380 = L.polyline(
+                [[36.1447, -86.8027], [35.1187, -89.9373]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_740a9bf5a85b12c56834748976cd1380.bindTooltip(
+                `<div>
+                     Vanderbilt University vs University of Memphis (190 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a1e20ae4514b49bcc1bcffefb6b634c6 = L.polyline(
+                [[38.2123, -85.7585], [39.1329, -84.515]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_a1e20ae4514b49bcc1bcffefb6b634c6.bindTooltip(
+                `<div>
+                     University of Louisville vs University of Cincinnati (92 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fb62b0ed6e08af5c5120877efdc7ed57 = L.polyline(
+                [[36.0014, -78.9382], [35.7847, -78.6821]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_fb62b0ed6e08af5c5120877efdc7ed57.bindTooltip(
+                `<div>
+                     Duke University vs North Carolina State University (21 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d301b0b5b8e1ebca9bbd567ae438fd30 = L.polyline(
+                [[36.1335, -80.2776], [38.9869, -76.9426]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_d301b0b5b8e1ebca9bbd567ae438fd30.bindTooltip(
+                `<div>
+                     Wake Forest University vs University of Maryland (269 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_88dd0b7f009869099d4d6bd6655c6aef = L.polyline(
+                [[43.0392, -76.1351], [40.4444, -79.9608]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_88dd0b7f009869099d4d6bd6655c6aef.bindTooltip(
+                `<div>
+                     Syracuse University vs University of Pittsburgh (266 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5ca18ee08df2eb32774e87d7c490c815 = L.polyline(
+                [[42.3355, -71.1685], [41.8077, -72.254]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_5ca18ee08df2eb32774e87d7c490c815.bindTooltip(
+                `<div>
+                     Boston College vs University of Connecticut (67 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6e3846568ece5c7806ca9c84bab5b1b1 = L.polyline(
+                [[40.5008, -74.4474], [39.9522, -75.1932]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_6e3846568ece5c7806ca9c84bab5b1b1.bindTooltip(
+                `<div>
+                     Rutgers University vs University of Pennsylvania (55 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5cdb0938afcaf4ce335cc4a2cdfa6c4f = L.polyline(
+                [[42.7018, -84.4822], [41.7052, -86.2353]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_5cdb0938afcaf4ce335cc4a2cdfa6c4f.bindTooltip(
+                `<div>
+                     Michigan State University vs University of Notre Dame (113 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_22b96d5106405f930f7c6d86800b03fe = L.polyline(
+                [[40.4237, -86.9212], [42.0565, -87.6753]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_22b96d5106405f930f7c6d86800b03fe.bindTooltip(
+                `<div>
+                     Purdue University vs Northwestern University (119 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ee50286f120bca2c61f1b61d8fbb366c = L.polyline(
+                [[38.9404, -92.3277], [39.1974, -96.5847]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_ee50286f120bca2c61f1b61d8fbb366c.bindTooltip(
+                `<div>
+                     University of Missouri vs Kansas State University (229 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_262961dd86f9b4d0003c6f5f78a51138 = L.polyline(
+                [[36.127, -97.0737], [36.1512, -95.946]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_262961dd86f9b4d0003c6f5f78a51138.bindTooltip(
+                `<div>
+                     Oklahoma State University vs University of Tulsa (63 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e7ad80cba7313e75426cbab5d464705b = L.polyline(
+                [[33.5843, -101.8783], [32.7098, -97.3628]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_e7ad80cba7313e75426cbab5d464705b.bindTooltip(
+                `<div>
+                     Texas Tech University vs Texas Christian University (268 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_14a20e33508d8e4719610b416a480ce0 = L.polyline(
+                [[31.5489, -97.1131], [29.7174, -95.4018]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_14a20e33508d8e4719610b416a480ce0.bindTooltip(
+                `<div>
+                     Baylor University vs Rice University (162 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2013c55083f907fe77df06165463a354 = L.polyline(
+                [[29.9407, -90.1203], [33.4552, -88.7944]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_2013c55083f907fe77df06165463a354.bindTooltip(
+                `<div>
+                     Tulane University vs Mississippi State University (255 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_abf000bb52ef3ce97234279751b56167 = L.polyline(
+                [[47.9253, -97.0329], [46.8977, -96.8024]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_abf000bb52ef3ce97234279751b56167.bindTooltip(
+                `<div>
+                     University of North Dakota vs North Dakota State University (72 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2edd62bb0c66a18f3b6cc2f5ecef6600 = L.polyline(
+                [[44.3191, -96.7844], [42.5145, -92.4632]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_2edd62bb0c66a18f3b6cc2f5ecef6600.bindTooltip(
+                `<div>
+                     South Dakota State University vs University of Northern Iowa (250 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8923c83e3e8cfcd6a951c9aa938d010c = L.polyline(
+                [[40.5734, -105.0865], [38.9983, -104.8613]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_8923c83e3e8cfcd6a951c9aa938d010c.bindTooltip(
+                `<div>
+                     Colorado State University vs U.S. Air Force Academy (109 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d46ba041c4c6327fc8b7177d790fea92 = L.polyline(
+                [[35.0844, -106.6198], [36.1085, -115.1432]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_d46ba041c4c6327fc8b7177d790fea92.bindTooltip(
+                `<div>
+                     University of New Mexico vs University of Nevada, Las Vegas (484 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fccd9c7cc3088604acf5071a2382c05c = L.polyline(
+                [[41.7452, -111.8097], [45.667, -111.0546]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_fccd9c7cc3088604acf5071a2382c05c.bindTooltip(
+                `<div>
+                     Utah State University vs Montana State University (274 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_44911bb6264348e94769cf4c02dd3c66 = L.polyline(
+                [[46.7271, -117.0137], [45.5118, -122.6853]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_44911bb6264348e94769cf4c02dd3c66.bindTooltip(
+                `<div>
+                     University of Idaho vs Portland State University (284 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d654156efef9054924b1964ba2e5363f = L.polyline(
+                [[37.4275, -122.1697], [37.3352, -121.8811]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_d654156efef9054924b1964ba2e5363f.bindTooltip(
+                `<div>
+                     Stanford University vs San Jose State University (17 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_24ce77b3579cf8f431f5e0300290ad1c = L.polyline(
+                [[32.7757, -117.0719], [36.8123, -119.7453]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+            poly_line_24ce77b3579cf8f431f5e0300290ad1c.bindTooltip(
+                `<div>
+                     San Diego State University vs Fresno State University (317 mi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1893e6f0a266b3649af6183c5d35faa5 = L.circleMarker(
+                [34.6834, -82.8374],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_01e561556028cf49be5a9f14628548a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_090bb9cc40fbe8fbe8b1edb5b00b288b = $(`<div id="html_090bb9cc40fbe8fbe8b1edb5b00b288b" style="width: 100.0%; height: 100.0%;">Clemson University (Clemson, SC)</div>`)[0];
+                popup_01e561556028cf49be5a9f14628548a6.setContent(html_090bb9cc40fbe8fbe8b1edb5b00b288b);
+            
+        
+
+        circle_marker_1893e6f0a266b3649af6183c5d35faa5.bindPopup(popup_01e561556028cf49be5a9f14628548a6)
+        ;
+
+        
+    
+    
+            var circle_marker_959ec79a763265e8fc0885caeb6edc6e = L.circleMarker(
+                [33.994, -81.03],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_1a9a8ece6b7ff3b016393abe22e33721 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38d8b57a2b5ce5079a1164d1f7745342 = $(`<div id="html_38d8b57a2b5ce5079a1164d1f7745342" style="width: 100.0%; height: 100.0%;">University of South Carolina (Columbia, SC)</div>`)[0];
+                popup_1a9a8ece6b7ff3b016393abe22e33721.setContent(html_38d8b57a2b5ce5079a1164d1f7745342);
+            
+        
+
+        circle_marker_959ec79a763265e8fc0885caeb6edc6e.bindPopup(popup_1a9a8ece6b7ff3b016393abe22e33721)
+        ;
+
+        
+    
+    
+            var circle_marker_b51c1b8d015f802cc8fa2c38f79a21c0 = L.circleMarker(
+                [32.6099, -85.4808],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_702b3084c88a3d10b2ca55fa24dfdcb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_853ee5aece4d6b6113e3967f60b8796f = $(`<div id="html_853ee5aece4d6b6113e3967f60b8796f" style="width: 100.0%; height: 100.0%;">Auburn University (Auburn, AL)</div>`)[0];
+                popup_702b3084c88a3d10b2ca55fa24dfdcb7.setContent(html_853ee5aece4d6b6113e3967f60b8796f);
+            
+        
+
+        circle_marker_b51c1b8d015f802cc8fa2c38f79a21c0.bindPopup(popup_702b3084c88a3d10b2ca55fa24dfdcb7)
+        ;
+
+        
+    
+    
+            var circle_marker_c5bbb6a2280677434d5f1830e67375f9 = L.circleMarker(
+                [30.4418, -84.2985],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_c818152835a071b7f09db1b6df86e620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8718ed85ef10b7c0b9bc496126c7bc58 = $(`<div id="html_8718ed85ef10b7c0b9bc496126c7bc58" style="width: 100.0%; height: 100.0%;">Florida State University (Tallahassee, FL)</div>`)[0];
+                popup_c818152835a071b7f09db1b6df86e620.setContent(html_8718ed85ef10b7c0b9bc496126c7bc58);
+            
+        
+
+        circle_marker_c5bbb6a2280677434d5f1830e67375f9.bindPopup(popup_c818152835a071b7f09db1b6df86e620)
+        ;
+
+        
+    
+    
+            var circle_marker_feb693a152cc8e6c7cb8124ac9d84c37 = L.circleMarker(
+                [25.7215, -80.2793],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_130ee146155b183cfc0fa4c3bc7524d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a57b85fc8a5ea339ed800b513a4a9907 = $(`<div id="html_a57b85fc8a5ea339ed800b513a4a9907" style="width: 100.0%; height: 100.0%;">University of Miami (Coral Gables, FL)</div>`)[0];
+                popup_130ee146155b183cfc0fa4c3bc7524d6.setContent(html_a57b85fc8a5ea339ed800b513a4a9907);
+            
+        
+
+        circle_marker_feb693a152cc8e6c7cb8124ac9d84c37.bindPopup(popup_130ee146155b183cfc0fa4c3bc7524d6)
+        ;
+
+        
+    
+    
+            var circle_marker_8072a046b801d33560571f601e5a0bc4 = L.circleMarker(
+                [33.7756, -84.3963],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_d467ff547c895d9854b5846b4604ea7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b6dbe18f114218b5c7a7d7fc51964aa = $(`<div id="html_5b6dbe18f114218b5c7a7d7fc51964aa" style="width: 100.0%; height: 100.0%;">Georgia Institute of Technology (Atlanta, GA)</div>`)[0];
+                popup_d467ff547c895d9854b5846b4604ea7e.setContent(html_5b6dbe18f114218b5c7a7d7fc51964aa);
+            
+        
+
+        circle_marker_8072a046b801d33560571f601e5a0bc4.bindPopup(popup_d467ff547c895d9854b5846b4604ea7e)
+        ;
+
+        
+    
+    
+            var circle_marker_b6dc98b9817df9da016434a0daa24457 = L.circleMarker(
+                [36.1447, -86.8027],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_0c7b185a462cd439685ab7946bdf8cf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8883796764e0d65ffc8ec2de860b59ff = $(`<div id="html_8883796764e0d65ffc8ec2de860b59ff" style="width: 100.0%; height: 100.0%;">Vanderbilt University (Nashville, TN)</div>`)[0];
+                popup_0c7b185a462cd439685ab7946bdf8cf5.setContent(html_8883796764e0d65ffc8ec2de860b59ff);
+            
+        
+
+        circle_marker_b6dc98b9817df9da016434a0daa24457.bindPopup(popup_0c7b185a462cd439685ab7946bdf8cf5)
+        ;
+
+        
+    
+    
+            var circle_marker_f08d84291d9fa55fdba69216ca938932 = L.circleMarker(
+                [38.2123, -85.7585],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_7ac1c7e8fa1bcafe2272780805fe3b26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65e5e721c81bcb2d518efba91697602f = $(`<div id="html_65e5e721c81bcb2d518efba91697602f" style="width: 100.0%; height: 100.0%;">University of Louisville (Louisville, KY)</div>`)[0];
+                popup_7ac1c7e8fa1bcafe2272780805fe3b26.setContent(html_65e5e721c81bcb2d518efba91697602f);
+            
+        
+
+        circle_marker_f08d84291d9fa55fdba69216ca938932.bindPopup(popup_7ac1c7e8fa1bcafe2272780805fe3b26)
+        ;
+
+        
+    
+    
+            var circle_marker_2294562756ba0f6230fd9363de82ad10 = L.circleMarker(
+                [36.0014, -78.9382],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_c7e9c2f5740063ad31a876b04898074e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b4336ebcfa2416fb03606e475472f2a = $(`<div id="html_0b4336ebcfa2416fb03606e475472f2a" style="width: 100.0%; height: 100.0%;">Duke University (Durham, NC)</div>`)[0];
+                popup_c7e9c2f5740063ad31a876b04898074e.setContent(html_0b4336ebcfa2416fb03606e475472f2a);
+            
+        
+
+        circle_marker_2294562756ba0f6230fd9363de82ad10.bindPopup(popup_c7e9c2f5740063ad31a876b04898074e)
+        ;
+
+        
+    
+    
+            var circle_marker_716b60107cc1e9ddd44ad0a653be3876 = L.circleMarker(
+                [35.7847, -78.6821],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_d5b41a701717de350585ba6fc9242234 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f8efa9013487d7096d8b616b76afef6 = $(`<div id="html_1f8efa9013487d7096d8b616b76afef6" style="width: 100.0%; height: 100.0%;">North Carolina State University (Raleigh, NC)</div>`)[0];
+                popup_d5b41a701717de350585ba6fc9242234.setContent(html_1f8efa9013487d7096d8b616b76afef6);
+            
+        
+
+        circle_marker_716b60107cc1e9ddd44ad0a653be3876.bindPopup(popup_d5b41a701717de350585ba6fc9242234)
+        ;
+
+        
+    
+    
+            var circle_marker_4c34497731413ad8541a03f51620e9be = L.circleMarker(
+                [36.1335, -80.2776],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_a369dc4d30377a442909ac5b3f66d23d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_598be0ee194de56a46a076b28867bcc4 = $(`<div id="html_598be0ee194de56a46a076b28867bcc4" style="width: 100.0%; height: 100.0%;">Wake Forest University (Winston-Salem, NC)</div>`)[0];
+                popup_a369dc4d30377a442909ac5b3f66d23d.setContent(html_598be0ee194de56a46a076b28867bcc4);
+            
+        
+
+        circle_marker_4c34497731413ad8541a03f51620e9be.bindPopup(popup_a369dc4d30377a442909ac5b3f66d23d)
+        ;
+
+        
+    
+    
+            var circle_marker_928309555bb573babc82262516f91dbf = L.circleMarker(
+                [38.9869, -76.9426],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_d9018227d02cd2bcef4d56cf81d201c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f96e361626d838c9e3fda0ee6680c08c = $(`<div id="html_f96e361626d838c9e3fda0ee6680c08c" style="width: 100.0%; height: 100.0%;">University of Maryland (College Park, MD)</div>`)[0];
+                popup_d9018227d02cd2bcef4d56cf81d201c2.setContent(html_f96e361626d838c9e3fda0ee6680c08c);
+            
+        
+
+        circle_marker_928309555bb573babc82262516f91dbf.bindPopup(popup_d9018227d02cd2bcef4d56cf81d201c2)
+        ;
+
+        
+    
+    
+            var circle_marker_48e6678d68e75fac22ed0f44302c9e94 = L.circleMarker(
+                [43.0392, -76.1351],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_34e2cc3ec1e749d63c45e247067fabe3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f94e7a6e77cdeccb8f6643325f43c47 = $(`<div id="html_0f94e7a6e77cdeccb8f6643325f43c47" style="width: 100.0%; height: 100.0%;">Syracuse University (Syracuse, NY)</div>`)[0];
+                popup_34e2cc3ec1e749d63c45e247067fabe3.setContent(html_0f94e7a6e77cdeccb8f6643325f43c47);
+            
+        
+
+        circle_marker_48e6678d68e75fac22ed0f44302c9e94.bindPopup(popup_34e2cc3ec1e749d63c45e247067fabe3)
+        ;
+
+        
+    
+    
+            var circle_marker_7de0567bde836c4b7612f9bc7b9e4ce1 = L.circleMarker(
+                [42.3355, -71.1685],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_102cdf381ba22a1dd9930e36f9303b52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8eba8f209e2a1220273fb7c907390f6 = $(`<div id="html_c8eba8f209e2a1220273fb7c907390f6" style="width: 100.0%; height: 100.0%;">Boston College (Chestnut Hill, MA)</div>`)[0];
+                popup_102cdf381ba22a1dd9930e36f9303b52.setContent(html_c8eba8f209e2a1220273fb7c907390f6);
+            
+        
+
+        circle_marker_7de0567bde836c4b7612f9bc7b9e4ce1.bindPopup(popup_102cdf381ba22a1dd9930e36f9303b52)
+        ;
+
+        
+    
+    
+            var circle_marker_5c7fe4bc97d452e8d0bfad793e8897fb = L.circleMarker(
+                [40.4444, -79.9608],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_693928af15647ddb92e559a4aa3ee78f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_479e6ac377b7d3492c2ee1359cad1f22 = $(`<div id="html_479e6ac377b7d3492c2ee1359cad1f22" style="width: 100.0%; height: 100.0%;">University of Pittsburgh (Pittsburgh, PA)</div>`)[0];
+                popup_693928af15647ddb92e559a4aa3ee78f.setContent(html_479e6ac377b7d3492c2ee1359cad1f22);
+            
+        
+
+        circle_marker_5c7fe4bc97d452e8d0bfad793e8897fb.bindPopup(popup_693928af15647ddb92e559a4aa3ee78f)
+        ;
+
+        
+    
+    
+            var circle_marker_466a1bca209011028ad94e22d35116b0 = L.circleMarker(
+                [40.5008, -74.4474],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_76b9a55af735b58909ad5c2a92851599 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9b5b8f0a088df8e71ee51e274515df2 = $(`<div id="html_b9b5b8f0a088df8e71ee51e274515df2" style="width: 100.0%; height: 100.0%;">Rutgers University (New Brunswick, NJ)</div>`)[0];
+                popup_76b9a55af735b58909ad5c2a92851599.setContent(html_b9b5b8f0a088df8e71ee51e274515df2);
+            
+        
+
+        circle_marker_466a1bca209011028ad94e22d35116b0.bindPopup(popup_76b9a55af735b58909ad5c2a92851599)
+        ;
+
+        
+    
+    
+            var circle_marker_b74bc79027ff2b6a5450ef095da85bb2 = L.circleMarker(
+                [41.8077, -72.254],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_f15be805d8eaa9b5ddd6b3b7bd6d5c95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c3e7dac5ba01460c1169d07150048d8 = $(`<div id="html_8c3e7dac5ba01460c1169d07150048d8" style="width: 100.0%; height: 100.0%;">University of Connecticut (Storrs, CT)</div>`)[0];
+                popup_f15be805d8eaa9b5ddd6b3b7bd6d5c95.setContent(html_8c3e7dac5ba01460c1169d07150048d8);
+            
+        
+
+        circle_marker_b74bc79027ff2b6a5450ef095da85bb2.bindPopup(popup_f15be805d8eaa9b5ddd6b3b7bd6d5c95)
+        ;
+
+        
+    
+    
+            var circle_marker_ef6275d2aac0ef0c2cd1c33f14756132 = L.circleMarker(
+                [39.9522, -75.1932],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_631f41bce60e0f9234f3d10fe0153380 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_222a42ad60b9d471d0816ef56e429a4d = $(`<div id="html_222a42ad60b9d471d0816ef56e429a4d" style="width: 100.0%; height: 100.0%;">University of Pennsylvania (Philadelphia, PA)</div>`)[0];
+                popup_631f41bce60e0f9234f3d10fe0153380.setContent(html_222a42ad60b9d471d0816ef56e429a4d);
+            
+        
+
+        circle_marker_ef6275d2aac0ef0c2cd1c33f14756132.bindPopup(popup_631f41bce60e0f9234f3d10fe0153380)
+        ;
+
+        
+    
+    
+            var circle_marker_708659264a5a8f234d804734d1807790 = L.circleMarker(
+                [39.1329, -84.515],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_3ff6aa000beaf655f48517d097a9ff57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b35f69ee9fd3d981136dd9c9f400a409 = $(`<div id="html_b35f69ee9fd3d981136dd9c9f400a409" style="width: 100.0%; height: 100.0%;">University of Cincinnati (Cincinnati, OH)</div>`)[0];
+                popup_3ff6aa000beaf655f48517d097a9ff57.setContent(html_b35f69ee9fd3d981136dd9c9f400a409);
+            
+        
+
+        circle_marker_708659264a5a8f234d804734d1807790.bindPopup(popup_3ff6aa000beaf655f48517d097a9ff57)
+        ;
+
+        
+    
+    
+            var circle_marker_8765fcbe55a7ec7c33ef54ba0efd5ed0 = L.circleMarker(
+                [42.7018, -84.4822],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_f7009117dbba24073c5e005a13131bb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1f28845568f4002fae72b08398c4ac7 = $(`<div id="html_b1f28845568f4002fae72b08398c4ac7" style="width: 100.0%; height: 100.0%;">Michigan State University (East Lansing, MI)</div>`)[0];
+                popup_f7009117dbba24073c5e005a13131bb3.setContent(html_b1f28845568f4002fae72b08398c4ac7);
+            
+        
+
+        circle_marker_8765fcbe55a7ec7c33ef54ba0efd5ed0.bindPopup(popup_f7009117dbba24073c5e005a13131bb3)
+        ;
+
+        
+    
+    
+            var circle_marker_713bf535c83ec4db7268083b1c608ea9 = L.circleMarker(
+                [40.4237, -86.9212],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_909c67db60063a7e2fd1723879fd7d5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f2a6aeb0041a5fc78cdfd44c6b95364 = $(`<div id="html_3f2a6aeb0041a5fc78cdfd44c6b95364" style="width: 100.0%; height: 100.0%;">Purdue University (West Lafayette, IN)</div>`)[0];
+                popup_909c67db60063a7e2fd1723879fd7d5f.setContent(html_3f2a6aeb0041a5fc78cdfd44c6b95364);
+            
+        
+
+        circle_marker_713bf535c83ec4db7268083b1c608ea9.bindPopup(popup_909c67db60063a7e2fd1723879fd7d5f)
+        ;
+
+        
+    
+    
+            var circle_marker_d3e8338695219335ba1b483af26064d1 = L.circleMarker(
+                [41.7052, -86.2353],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_03186b69b2f02579f90214dde250f83f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b322e020c4108e9c3547af198fbb3e2 = $(`<div id="html_1b322e020c4108e9c3547af198fbb3e2" style="width: 100.0%; height: 100.0%;">University of Notre Dame (Notre Dame, IN)</div>`)[0];
+                popup_03186b69b2f02579f90214dde250f83f.setContent(html_1b322e020c4108e9c3547af198fbb3e2);
+            
+        
+
+        circle_marker_d3e8338695219335ba1b483af26064d1.bindPopup(popup_03186b69b2f02579f90214dde250f83f)
+        ;
+
+        
+    
+    
+            var circle_marker_52201709100b3623de57ea9fc25e9726 = L.circleMarker(
+                [42.0565, -87.6753],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_0b914d709af759106626e00b2d974dc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_936fb9e69c4af44227ce6dfea7b0d8a6 = $(`<div id="html_936fb9e69c4af44227ce6dfea7b0d8a6" style="width: 100.0%; height: 100.0%;">Northwestern University (Evanston, IL)</div>`)[0];
+                popup_0b914d709af759106626e00b2d974dc5.setContent(html_936fb9e69c4af44227ce6dfea7b0d8a6);
+            
+        
+
+        circle_marker_52201709100b3623de57ea9fc25e9726.bindPopup(popup_0b914d709af759106626e00b2d974dc5)
+        ;
+
+        
+    
+    
+            var circle_marker_3269834093c3ee0433d9fd90bd4b1a21 = L.circleMarker(
+                [38.9404, -92.3277],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_a29b0dd1154ab46cb347c279955f2739 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6bf22ca10c859bea356c3253e7c676f = $(`<div id="html_f6bf22ca10c859bea356c3253e7c676f" style="width: 100.0%; height: 100.0%;">University of Missouri (Columbia, MO)</div>`)[0];
+                popup_a29b0dd1154ab46cb347c279955f2739.setContent(html_f6bf22ca10c859bea356c3253e7c676f);
+            
+        
+
+        circle_marker_3269834093c3ee0433d9fd90bd4b1a21.bindPopup(popup_a29b0dd1154ab46cb347c279955f2739)
+        ;
+
+        
+    
+    
+            var circle_marker_82feb3f9b71976f14ba7e8687f5dc3f6 = L.circleMarker(
+                [39.1974, -96.5847],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_3dbb2cc8f0fecbf62198fb75040398f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1df6b2dc4f3f1e255a8d22e47e42723e = $(`<div id="html_1df6b2dc4f3f1e255a8d22e47e42723e" style="width: 100.0%; height: 100.0%;">Kansas State University (Manhattan, KS)</div>`)[0];
+                popup_3dbb2cc8f0fecbf62198fb75040398f2.setContent(html_1df6b2dc4f3f1e255a8d22e47e42723e);
+            
+        
+
+        circle_marker_82feb3f9b71976f14ba7e8687f5dc3f6.bindPopup(popup_3dbb2cc8f0fecbf62198fb75040398f2)
+        ;
+
+        
+    
+    
+            var circle_marker_119c230cff306a2d684c799600d011fe = L.circleMarker(
+                [36.127, -97.0737],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_e101491662a9f5e1a00045dc932108ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5b3209c1040245fbfcc7abf5350146e = $(`<div id="html_c5b3209c1040245fbfcc7abf5350146e" style="width: 100.0%; height: 100.0%;">Oklahoma State University (Stillwater, OK)</div>`)[0];
+                popup_e101491662a9f5e1a00045dc932108ae.setContent(html_c5b3209c1040245fbfcc7abf5350146e);
+            
+        
+
+        circle_marker_119c230cff306a2d684c799600d011fe.bindPopup(popup_e101491662a9f5e1a00045dc932108ae)
+        ;
+
+        
+    
+    
+            var circle_marker_a5213c0aa24c7d075c5c8d798a63d277 = L.circleMarker(
+                [33.5843, -101.8783],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_340e3bdda3077ce00392cd1a2b1d3a1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84c44254c02148fda5b60e85712d0d93 = $(`<div id="html_84c44254c02148fda5b60e85712d0d93" style="width: 100.0%; height: 100.0%;">Texas Tech University (Lubbock, TX)</div>`)[0];
+                popup_340e3bdda3077ce00392cd1a2b1d3a1a.setContent(html_84c44254c02148fda5b60e85712d0d93);
+            
+        
+
+        circle_marker_a5213c0aa24c7d075c5c8d798a63d277.bindPopup(popup_340e3bdda3077ce00392cd1a2b1d3a1a)
+        ;
+
+        
+    
+    
+            var circle_marker_67e543acf959f4528529ef2b76298116 = L.circleMarker(
+                [31.5489, -97.1131],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_4eca5a546acbe233b633c20db0cb9d6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f1b1098336626d03f7bd1fd8f6521d0 = $(`<div id="html_5f1b1098336626d03f7bd1fd8f6521d0" style="width: 100.0%; height: 100.0%;">Baylor University (Waco, TX)</div>`)[0];
+                popup_4eca5a546acbe233b633c20db0cb9d6a.setContent(html_5f1b1098336626d03f7bd1fd8f6521d0);
+            
+        
+
+        circle_marker_67e543acf959f4528529ef2b76298116.bindPopup(popup_4eca5a546acbe233b633c20db0cb9d6a)
+        ;
+
+        
+    
+    
+            var circle_marker_2870bf16ec5ff21d213561bbdf08a43e = L.circleMarker(
+                [32.7098, -97.3628],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_268ec9e8f2ffe24413263e049de20d3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d68ee1b0cb72e469f1242b4b461f3ed = $(`<div id="html_9d68ee1b0cb72e469f1242b4b461f3ed" style="width: 100.0%; height: 100.0%;">Texas Christian University (Fort Worth, TX)</div>`)[0];
+                popup_268ec9e8f2ffe24413263e049de20d3b.setContent(html_9d68ee1b0cb72e469f1242b4b461f3ed);
+            
+        
+
+        circle_marker_2870bf16ec5ff21d213561bbdf08a43e.bindPopup(popup_268ec9e8f2ffe24413263e049de20d3b)
+        ;
+
+        
+    
+    
+            var circle_marker_de381085d15e63ed5d9e8e1e1fdad9a5 = L.circleMarker(
+                [29.7174, -95.4018],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_5bf5aab774aed2a0b8281cbbd6baaeaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b757e675a1ac9890ea220036c6846ca = $(`<div id="html_7b757e675a1ac9890ea220036c6846ca" style="width: 100.0%; height: 100.0%;">Rice University (Houston, TX)</div>`)[0];
+                popup_5bf5aab774aed2a0b8281cbbd6baaeaf.setContent(html_7b757e675a1ac9890ea220036c6846ca);
+            
+        
+
+        circle_marker_de381085d15e63ed5d9e8e1e1fdad9a5.bindPopup(popup_5bf5aab774aed2a0b8281cbbd6baaeaf)
+        ;
+
+        
+    
+    
+            var circle_marker_ad949991a279b6a1d9667202156b4fc3 = L.circleMarker(
+                [29.9407, -90.1203],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_cb0c86756dae3f140c5bb05939249fe2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_325cc44c4a76f5d0ed855d0c344cfb59 = $(`<div id="html_325cc44c4a76f5d0ed855d0c344cfb59" style="width: 100.0%; height: 100.0%;">Tulane University (New Orleans, LA)</div>`)[0];
+                popup_cb0c86756dae3f140c5bb05939249fe2.setContent(html_325cc44c4a76f5d0ed855d0c344cfb59);
+            
+        
+
+        circle_marker_ad949991a279b6a1d9667202156b4fc3.bindPopup(popup_cb0c86756dae3f140c5bb05939249fe2)
+        ;
+
+        
+    
+    
+            var circle_marker_a37a3a56f05c9e101d3e080439a21a5c = L.circleMarker(
+                [33.4552, -88.7944],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_a197408d5043e2ef5948f5c9be7bdfb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_521bcbff20629353e32fb7f6018941f6 = $(`<div id="html_521bcbff20629353e32fb7f6018941f6" style="width: 100.0%; height: 100.0%;">Mississippi State University (Starkville, MS)</div>`)[0];
+                popup_a197408d5043e2ef5948f5c9be7bdfb7.setContent(html_521bcbff20629353e32fb7f6018941f6);
+            
+        
+
+        circle_marker_a37a3a56f05c9e101d3e080439a21a5c.bindPopup(popup_a197408d5043e2ef5948f5c9be7bdfb7)
+        ;
+
+        
+    
+    
+            var circle_marker_1ed069f5458d74d3b81b8794ff1f4ac6 = L.circleMarker(
+                [35.1187, -89.9373],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_6fd4aa1ef0aa805a3e6047c02ba682db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5193516ae5719985b1a0ba27bb471275 = $(`<div id="html_5193516ae5719985b1a0ba27bb471275" style="width: 100.0%; height: 100.0%;">University of Memphis (Memphis, TN)</div>`)[0];
+                popup_6fd4aa1ef0aa805a3e6047c02ba682db.setContent(html_5193516ae5719985b1a0ba27bb471275);
+            
+        
+
+        circle_marker_1ed069f5458d74d3b81b8794ff1f4ac6.bindPopup(popup_6fd4aa1ef0aa805a3e6047c02ba682db)
+        ;
+
+        
+    
+    
+            var circle_marker_d47b672db810275e128d99d2d49e57e8 = L.circleMarker(
+                [36.1512, -95.946],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_9017b158a23479a42537bd1a174f7c8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9dcf0db63b10af486760436e365ad63 = $(`<div id="html_f9dcf0db63b10af486760436e365ad63" style="width: 100.0%; height: 100.0%;">University of Tulsa (Tulsa, OK)</div>`)[0];
+                popup_9017b158a23479a42537bd1a174f7c8f.setContent(html_f9dcf0db63b10af486760436e365ad63);
+            
+        
+
+        circle_marker_d47b672db810275e128d99d2d49e57e8.bindPopup(popup_9017b158a23479a42537bd1a174f7c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_9a3b7fce50608c81b40e0130c2c3fa39 = L.circleMarker(
+                [47.9253, -97.0329],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_bad9cf394897ecb8b358e6d2d4e8e072 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a76c423d76ce8a95c13351b38c268a6 = $(`<div id="html_6a76c423d76ce8a95c13351b38c268a6" style="width: 100.0%; height: 100.0%;">University of North Dakota (Grand Forks, ND)</div>`)[0];
+                popup_bad9cf394897ecb8b358e6d2d4e8e072.setContent(html_6a76c423d76ce8a95c13351b38c268a6);
+            
+        
+
+        circle_marker_9a3b7fce50608c81b40e0130c2c3fa39.bindPopup(popup_bad9cf394897ecb8b358e6d2d4e8e072)
+        ;
+
+        
+    
+    
+            var circle_marker_9b9806b79a82c8750d5a8cf9e7e5547b = L.circleMarker(
+                [46.8977, -96.8024],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_9c007afb36a35b040cb79d41902b073e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48b34446c8199d7d82c7aab34b0014e5 = $(`<div id="html_48b34446c8199d7d82c7aab34b0014e5" style="width: 100.0%; height: 100.0%;">North Dakota State University (Fargo, ND)</div>`)[0];
+                popup_9c007afb36a35b040cb79d41902b073e.setContent(html_48b34446c8199d7d82c7aab34b0014e5);
+            
+        
+
+        circle_marker_9b9806b79a82c8750d5a8cf9e7e5547b.bindPopup(popup_9c007afb36a35b040cb79d41902b073e)
+        ;
+
+        
+    
+    
+            var circle_marker_bed64760c184ff93186d26a82cf2335e = L.circleMarker(
+                [44.3191, -96.7844],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_764438e11a888d8525504154ef878324 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3b3edc1e9f8d5b08b51acef82459ecb = $(`<div id="html_e3b3edc1e9f8d5b08b51acef82459ecb" style="width: 100.0%; height: 100.0%;">South Dakota State University (Brookings, SD)</div>`)[0];
+                popup_764438e11a888d8525504154ef878324.setContent(html_e3b3edc1e9f8d5b08b51acef82459ecb);
+            
+        
+
+        circle_marker_bed64760c184ff93186d26a82cf2335e.bindPopup(popup_764438e11a888d8525504154ef878324)
+        ;
+
+        
+    
+    
+            var circle_marker_a38c00ea826dba3b34cecc8923bbcbbe = L.circleMarker(
+                [42.5145, -92.4632],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_74b13bd05ae8961e4a54f433fc385886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70abc811a45600d055d6449d509ab913 = $(`<div id="html_70abc811a45600d055d6449d509ab913" style="width: 100.0%; height: 100.0%;">University of Northern Iowa (Cedar Falls, IA)</div>`)[0];
+                popup_74b13bd05ae8961e4a54f433fc385886.setContent(html_70abc811a45600d055d6449d509ab913);
+            
+        
+
+        circle_marker_a38c00ea826dba3b34cecc8923bbcbbe.bindPopup(popup_74b13bd05ae8961e4a54f433fc385886)
+        ;
+
+        
+    
+    
+            var circle_marker_7482d015fcc47bcc75d4fd0127d937b1 = L.circleMarker(
+                [40.5734, -105.0865],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_9081549f137417b3f7a619e86f491de4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3877a9a40734caddd534c1e7ef4c5001 = $(`<div id="html_3877a9a40734caddd534c1e7ef4c5001" style="width: 100.0%; height: 100.0%;">Colorado State University (Fort Collins, CO)</div>`)[0];
+                popup_9081549f137417b3f7a619e86f491de4.setContent(html_3877a9a40734caddd534c1e7ef4c5001);
+            
+        
+
+        circle_marker_7482d015fcc47bcc75d4fd0127d937b1.bindPopup(popup_9081549f137417b3f7a619e86f491de4)
+        ;
+
+        
+    
+    
+            var circle_marker_84dae2bd5ac809c59f697f1ff6f8e49f = L.circleMarker(
+                [38.9983, -104.8613],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_4bfe37f367711a9bbace81c09b3a4021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_731385920d8ad0b9977fa632ebfcaf95 = $(`<div id="html_731385920d8ad0b9977fa632ebfcaf95" style="width: 100.0%; height: 100.0%;">U.S. Air Force Academy (Colorado Springs, CO)</div>`)[0];
+                popup_4bfe37f367711a9bbace81c09b3a4021.setContent(html_731385920d8ad0b9977fa632ebfcaf95);
+            
+        
+
+        circle_marker_84dae2bd5ac809c59f697f1ff6f8e49f.bindPopup(popup_4bfe37f367711a9bbace81c09b3a4021)
+        ;
+
+        
+    
+    
+            var circle_marker_1439cb18f59a2db46762b0d6c50de0d5 = L.circleMarker(
+                [35.0844, -106.6198],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_e2f36a0fb968b99630ebd4fea00d0b88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e338d73ffe1b83e312ee562d0abbaf7d = $(`<div id="html_e338d73ffe1b83e312ee562d0abbaf7d" style="width: 100.0%; height: 100.0%;">University of New Mexico (Albuquerque, NM)</div>`)[0];
+                popup_e2f36a0fb968b99630ebd4fea00d0b88.setContent(html_e338d73ffe1b83e312ee562d0abbaf7d);
+            
+        
+
+        circle_marker_1439cb18f59a2db46762b0d6c50de0d5.bindPopup(popup_e2f36a0fb968b99630ebd4fea00d0b88)
+        ;
+
+        
+    
+    
+            var circle_marker_d30bd86f70286053ed0ad9e35da2773c = L.circleMarker(
+                [36.1085, -115.1432],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_9b65b2a1f00789d4d16d05edbfd02ff7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_982603d9b64bb5dc3eb009c320f32dbe = $(`<div id="html_982603d9b64bb5dc3eb009c320f32dbe" style="width: 100.0%; height: 100.0%;">University of Nevada, Las Vegas (Las Vegas, NV)</div>`)[0];
+                popup_9b65b2a1f00789d4d16d05edbfd02ff7.setContent(html_982603d9b64bb5dc3eb009c320f32dbe);
+            
+        
+
+        circle_marker_d30bd86f70286053ed0ad9e35da2773c.bindPopup(popup_9b65b2a1f00789d4d16d05edbfd02ff7)
+        ;
+
+        
+    
+    
+            var circle_marker_bd02afc9d0ce71df0ab8ea0f1a943f85 = L.circleMarker(
+                [41.7452, -111.8097],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_b2fd819138f9d3f7ae8be6cd76c95f28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65e4c2f796147dd33b572f3a92ccdd11 = $(`<div id="html_65e4c2f796147dd33b572f3a92ccdd11" style="width: 100.0%; height: 100.0%;">Utah State University (Logan, UT)</div>`)[0];
+                popup_b2fd819138f9d3f7ae8be6cd76c95f28.setContent(html_65e4c2f796147dd33b572f3a92ccdd11);
+            
+        
+
+        circle_marker_bd02afc9d0ce71df0ab8ea0f1a943f85.bindPopup(popup_b2fd819138f9d3f7ae8be6cd76c95f28)
+        ;
+
+        
+    
+    
+            var circle_marker_4eca97384683464d36938336dae8025c = L.circleMarker(
+                [45.667, -111.0546],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_ccd960bd4a647a4e4fdc950dc99105d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf34a075b374ba6438dba7992d203a1a = $(`<div id="html_bf34a075b374ba6438dba7992d203a1a" style="width: 100.0%; height: 100.0%;">Montana State University (Bozeman, MT)</div>`)[0];
+                popup_ccd960bd4a647a4e4fdc950dc99105d7.setContent(html_bf34a075b374ba6438dba7992d203a1a);
+            
+        
+
+        circle_marker_4eca97384683464d36938336dae8025c.bindPopup(popup_ccd960bd4a647a4e4fdc950dc99105d7)
+        ;
+
+        
+    
+    
+            var circle_marker_97f3ea85a4e9078b7c7e5e8fc415f324 = L.circleMarker(
+                [46.7271, -117.0137],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_7546f9a9f842e5edf595604df5e389df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01c7e65dbb4badcf57d2d676577fee2b = $(`<div id="html_01c7e65dbb4badcf57d2d676577fee2b" style="width: 100.0%; height: 100.0%;">University of Idaho (Moscow, ID)</div>`)[0];
+                popup_7546f9a9f842e5edf595604df5e389df.setContent(html_01c7e65dbb4badcf57d2d676577fee2b);
+            
+        
+
+        circle_marker_97f3ea85a4e9078b7c7e5e8fc415f324.bindPopup(popup_7546f9a9f842e5edf595604df5e389df)
+        ;
+
+        
+    
+    
+            var circle_marker_0ed21f0bf3e129ead73ac35a5406ed6c = L.circleMarker(
+                [45.5118, -122.6853],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_22553a59f91288b86ec3e56a01ac96c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_065aae8657ea0fd3ea60c552434ee671 = $(`<div id="html_065aae8657ea0fd3ea60c552434ee671" style="width: 100.0%; height: 100.0%;">Portland State University (Portland, OR)</div>`)[0];
+                popup_22553a59f91288b86ec3e56a01ac96c2.setContent(html_065aae8657ea0fd3ea60c552434ee671);
+            
+        
+
+        circle_marker_0ed21f0bf3e129ead73ac35a5406ed6c.bindPopup(popup_22553a59f91288b86ec3e56a01ac96c2)
+        ;
+
+        
+    
+    
+            var circle_marker_ca94ae9704f3801d52593bc559e6ffb8 = L.circleMarker(
+                [37.4275, -122.1697],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_f8b6a1294f0405e5da2afb4a419ff4b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b8be15938bf2058c9e95fa13f40dd98 = $(`<div id="html_3b8be15938bf2058c9e95fa13f40dd98" style="width: 100.0%; height: 100.0%;">Stanford University (Stanford, CA)</div>`)[0];
+                popup_f8b6a1294f0405e5da2afb4a419ff4b9.setContent(html_3b8be15938bf2058c9e95fa13f40dd98);
+            
+        
+
+        circle_marker_ca94ae9704f3801d52593bc559e6ffb8.bindPopup(popup_f8b6a1294f0405e5da2afb4a419ff4b9)
+        ;
+
+        
+    
+    
+            var circle_marker_429ac6f11b04a333870d633bdb7289b3 = L.circleMarker(
+                [32.7757, -117.0719],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_6e8b7d3a028648727ab6f2eecaa5fe6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aac40fc418ed695909da25a54d09db60 = $(`<div id="html_aac40fc418ed695909da25a54d09db60" style="width: 100.0%; height: 100.0%;">San Diego State University (San Diego, CA)</div>`)[0];
+                popup_6e8b7d3a028648727ab6f2eecaa5fe6c.setContent(html_aac40fc418ed695909da25a54d09db60);
+            
+        
+
+        circle_marker_429ac6f11b04a333870d633bdb7289b3.bindPopup(popup_6e8b7d3a028648727ab6f2eecaa5fe6c)
+        ;
+
+        
+    
+    
+            var circle_marker_d325e59fafd188b694756449092f6230 = L.circleMarker(
+                [36.8123, -119.7453],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_6928359fff20df11af5f913d4fff6f15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2d5a1cd4a57c5335392531366f8f730 = $(`<div id="html_b2d5a1cd4a57c5335392531366f8f730" style="width: 100.0%; height: 100.0%;">Fresno State University (Fresno, CA)</div>`)[0];
+                popup_6928359fff20df11af5f913d4fff6f15.setContent(html_b2d5a1cd4a57c5335392531366f8f730);
+            
+        
+
+        circle_marker_d325e59fafd188b694756449092f6230.bindPopup(popup_6928359fff20df11af5f913d4fff6f15)
+        ;
+
+        
+    
+    
+            var circle_marker_6fe0e4f43e5de57f3c54061476cb68b4 = L.circleMarker(
+                [37.3352, -121.8811],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_56ad78dcbd68ea65e547d7d85230f310);
+        
+    
+        var popup_7fac41ca45b321367fdfad8d54aacf2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9204ab15b6d9a0548ee4f13445d08073 = $(`<div id="html_9204ab15b6d9a0548ee4f13445d08073" style="width: 100.0%; height: 100.0%;">San Jose State University (San Jose, CA)</div>`)[0];
+                popup_7fac41ca45b321367fdfad8d54aacf2f.setContent(html_9204ab15b6d9a0548ee4f13445d08073);
+            
+        
+
+        circle_marker_6fe0e4f43e5de57f3c54061476cb68b4.bindPopup(popup_7fac41ca45b321367fdfad8d54aacf2f)
+        ;
+
+        
+    
+</script>
+</html>
